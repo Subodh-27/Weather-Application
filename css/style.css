@@ -19,7 +19,7 @@ body {
 .container {
   position: relative;
   width: 400px;
-  height: 105px;
+  max-height: 550px;
   background: #fff;
   padding: 28px 32px;
   overflow: hidden;
