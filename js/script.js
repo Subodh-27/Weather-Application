@@ -5,8 +5,7 @@ const weatherDetails = document.querySelector(".weather-details");
 const error404 = document.querySelector(".not-found");
 
 search.addEventListener("click", () => {
-  // Feel free to use mine :)
-  const APIKey = "185dbcc57e27f9315a49d3f1c762ebd7";
+  const APIKey = "0c6831cb6cd8f52a9328a28e3b8ea047";
   const city = document.querySelector(".search-box input").value;
 
   if (city === "") return;
@@ -67,7 +66,7 @@ search.addEventListener("click", () => {
       temperature.innerHTML = `${parseInt(json.main.temp)}<span>°C</span>`;
       description.innerHTML = `${json.weather[0].description}`;
       humidity.innerHTML = `${json.main.humidity}%`;
-      wind.innerHTML = `${parseInt(json.wind.speed)}Km/h`;
+      wind.innerHTML = `${parseInt(json.wind.speed)}KM / H`;
 
       weatherBox.style.display = "";
       weatherDetails.style.display = "";
